@@ -1,0 +1,284 @@
+/* Bills screens. Colors and radii come from tokens in global.css. */
+
+.loading-text {
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.new-bill-btn {
+  width: auto;
+  min-height: 44px;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.search {
+  position: relative;
+  flex: 1;
+}
+
+.search .input {
+  padding-left: 44px;
+}
+
+.search__icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  scrollbar-width: none;
+}
+
+.chip {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.chip.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.list,
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bill-card {
+  display: block;
+  position: relative;
+  padding-left: 22px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.bill-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 6px;
+  border-radius: 0 4px 4px 0;
+  background: var(--bar-color, var(--color-slate));
+}
+
+.bill-card__row,
+.row-line,
+.work-item__header,
+.work-item__amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.bill-card__name {
+  font-weight: 700;
+}
+
+.bill-card__meta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.bill-card__amount {
+  font-weight: 800;
+}
+
+.bill-card__pending {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-danger);
+  text-align: right;
+}
+
+.row-line {
+  font-size: 14px;
+  padding: 6px 0;
+  align-items: flex-start;
+}
+
+.row-line span {
+  color: var(--color-text-muted);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-pending {
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+}
+
+.badge-partial {
+  background: var(--color-accent-soft);
+  color: #9a5b00;
+}
+
+.badge-paid {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.alert-success {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 24px 0 12px;
+}
+
+.work-item__header h3 {
+  font-size: 16px;
+}
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  display: grid;
+  place-items: center;
+}
+
+.icon-btn--danger {
+  color: var(--color-danger);
+}
+
+.icon-btn:disabled {
+  opacity: 0.4;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 12px;
+}
+
+.input-with-suffix {
+  position: relative;
+}
+
+.input-with-suffix .input {
+  padding-right: 64px;
+}
+
+.input-with-suffix__unit {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.textarea {
+  min-height: 84px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+
+.field__error {
+  font-size: 13px;
+  color: var(--color-danger);
+}
+
+.add-work-btn {
+  margin: 12px 0 16px;
+}
+
+.total-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.total-card strong {
+  font-size: 24px;
+}
+
+.save-bill-btn {
+  margin-top: 16px;
+}
+
+.detail-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.link-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.empty-state__title {
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+.empty-state .btn {
+  width: auto;
+  margin-top: 12px;
+}
+
+@media (min-width: 480px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}

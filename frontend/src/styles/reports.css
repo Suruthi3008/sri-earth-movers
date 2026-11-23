@@ -1,0 +1,89 @@
+/* Home, Reports and Settings */
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.hero-card {
+  margin-bottom: 12px;
+}
+
+.home-tiles {
+  margin-top: 12px;
+}
+
+.section-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.line-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--color-border);
+  font-size: 15px;
+}
+
+.line-item:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.line-item span {
+  color: var(--color-text-muted);
+}
+
+.line-item--total {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.line-item--total span {
+  color: var(--color-text);
+}
+
+.result-card .line-item--total {
+  background: var(--color-accent-soft);
+  margin: 12px -16px -16px;
+  padding: 14px 16px;
+  border-radius: 0 0 var(--radius-card) var(--radius-card);
+  border-top: 0;
+}
+
+.custom-range {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.custom-range .field {
+  margin-bottom: 0;
+}
+
+.field__hint {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 480px) {
+  .quick-actions {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,214 @@
+/* Payments and Expenses screens */
+
+.month-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero-card__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.hero-card__amount {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+.hero-card__sub {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.hero-card__sub strong {
+  color: var(--color-danger);
+}
+
+.add-payment-btn {
+  margin: 12px 0 16px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.input-with-prefix {
+  position: relative;
+}
+
+.input-with-prefix .input {
+  padding-left: 36px;
+}
+
+.input-with-prefix__symbol {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.amount-helper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: var(--radius-control);
+  background: var(--color-bg);
+  font-size: 14px;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.method-pill {
+  min-height: 48px;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.method-pill.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.ledger-note {
+  margin: 0 0 12px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.tile {
+  background: var(--color-bg);
+  border-radius: var(--radius-control);
+  padding: 12px 10px;
+  min-width: 0;
+}
+
+.tile__label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.tile__value {
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
+.tile__value--danger {
+  color: var(--color-danger);
+}
+
+.record-card {
+  position: relative;
+  display: block;
+  padding-left: 22px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.record-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 6px;
+  border-radius: 0 4px 4px 0;
+  background: var(--bar-color, var(--color-slate));
+}
+
+.record-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.record-card__foot {
+  margin-top: 8px;
+}
+
+.record-card__title {
+  font-weight: 700;
+}
+
+.record-card__meta {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.record-card__amount {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.menu-card {
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  padding: 16px;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-row:first-child {
+  border-top: 0;
+}
+
+.menu-row.is-disabled {
+  color: var(--color-text-muted);
+}
+
+.menu-row__hint {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+#add-payment {
+  scroll-margin-top: 90px;
+}

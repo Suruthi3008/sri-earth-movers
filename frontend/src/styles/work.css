@@ -1,0 +1,64 @@
+/* Daily Work, JCB Work, Drivers and Driver Payments */
+
+.tiles--two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.tile-card {
+  padding: 16px;
+  min-width: 0;
+}
+
+.tile-card__value {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+.tile-card__value--danger {
+  color: var(--color-danger);
+}
+
+.tile-card__sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.badge-inactive {
+  background: #eef0f3;
+  color: var(--color-slate);
+}
+
+.btn-compact {
+  width: auto;
+  min-height: 40px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  border-radius: var(--radius-control);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.segmented__item {
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.segmented__item.is-active {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
